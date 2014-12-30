@@ -1,0 +1,7 @@
+HiLoAutograderTest.java:1: error: illegal character: \65279
+﻿import java.util.Random;
+^
+HiLoAutograderTest.java:1: error: class, interface, or enum expected
+﻿import java.util.Random;
+        ^
+2 errors

@@ -1,0 +1,145 @@
+/*
+    Document   : app/assets/stylesheets/problemsets．css．scss
+    Created on : 2014-11-11 01:54 PM
+    Author     : mookie1097
+    Description: for problemsets
+    Purpose of the stylesheet follows.
+*/
+
+.problem-list-body{
+
+}
+.ui-tooltip, .arrow:after {
+  background: black;
+  border: 2px solid white;
+}
+.ui-tooltip {
+  padding: 10px 20px;
+  color: white;
+  border-radius: 20px;
+  font: bold 14px "Helvetica Neue", Sans-Serif;
+  text-transform: uppercase;
+  box-shadow: 0 0 7px black;
+}
+.arrow {
+  width: 70px;
+  height: 16px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  bottom: -16px;
+}
+.arrow.top {
+  top: -16px;
+  bottom: auto;
+}
+.arrow.left {
+  left: 20%;
+}
+.arrow:after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: -20px;
+  width: 25px;
+  height: 25px;
+  box-shadow: 6px 5px 9px -9px black;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.arrow.top:after {
+  bottom: -20px;
+  top: auto;
+}
+
+#ps-list{
+  margin: 0 auto;
+  margin-left:5%;
+}
+
+
+.ps-info{
+  margin-top:20px;
+  background-color:#FFF;
+  font-family: "Helvetica-light", "Helvetica";
+  max-width:90%;
+  min-width:90%;
+  min-height:150px;
+  position:relative;
+  display:inline-block;
+  border: 1px solid #dcdcdc;
+  -webkit-box-shadow: 7px 7px 23px 0px rgba(102,102,102,0.52);
+  -moz-box-shadow: 7px 7px 23px 0px rgba(102,102,102,0.52);
+  box-shadow: 7px 7px 23px 0px rgba(102,102,102,0.52);
+  vertical-align: top;
+}
+
+.ps-title {
+  font-family: "Helvetica";
+  background-color:#33393d;
+  font-size:20px !important;
+  width:100%;
+  //padding:0 270px;
+  margin: 0 auto;
+  display:inline-block;
+  padding:20px;
+  border-bottom:1px solid #b3b3b3;
+}
+.ps-title-text{
+  margin:0 auto;
+  color:#dcdcdc !important;
+}
+
+.ps-title-edit{
+  float:right;
+  font-size:10px;
+}
+
+.ps-explanation{
+  padding:10px 10px 10px 20px;
+  display:inline-block;
+  width:100%
+}
+
+.expand{
+  font-size:20px;
+  display:inline-block;
+  text-align:center;
+  float:right;
+}
+
+.ps-problems-list{
+  text-align:center;
+  padding-top:10px;
+  padding-bottom:10px;
+  border-top:1px solid #b3b3b3;
+}
+
+
+
+#col-1, #col-2, #col-3{
+  display:inline-block;
+  width:33%;
+  height:100%;
+  margin:0 auto;
+  vertical-align:top;
+  
+}
+
+#problemset-header{
+  width:80%;
+  margin:auto;
+  padding-top:30px;
+  border-bottom:1px solid #b3b3b3;
+}
+
+#view-problemset-title{
+  font-size:60px;
+  text-align:center;
+}
+
+#problemset-description{
+  font-face:"helvetica-neue light";
+}

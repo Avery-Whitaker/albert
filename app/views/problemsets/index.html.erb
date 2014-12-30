@@ -1,0 +1,50 @@
+<!--
+  Problemsets index
+  seems functionally complete
+-->
+  <%if @problemsets%>
+    <div id="ps-list">
+      <span id="col-1">
+        <% array = (0..(@problemsets.count-1)/3.to_i).to_a.map{|x| x * 3}.select{|x| x <= @problemsets.count-1}%>
+        <% array.each do |ind| %>
+        <%= render partial:"problemsets/problemset", locals: {problemset: @problemsets[ind]}%>
+        <br>
+        <% end %>
+      </span>
+      <span id="col-2">
+        <% array = (0..(@problemsets.count-1)/3.to_i).to_a.map{|x| x * 3 + 1}.select{|x| x <= @problemsets.count-1}%>
+        <% array.each do |ind| %>
+        <%= render partial:"problemsets/problemset", locals: {problemset: @problemsets[ind]}%>
+        <br>
+        <% end %>
+      </span>
+      <span id="col-3">
+        <% array = (0..(@problemsets.count-1)/3.to_i).to_a.map{|x| x * 3 + 2}.select{|x| x <= @problemsets.count-1}%>
+        <% array.each do |ind| %>
+        <%= render partial:"problemsets/problemset", locals: {problemset: @problemsets[ind]}%>
+        <br>
+        <% end %>
+      </span>
+    </div>
+  <%else%>
+  <!--User has no problemsets-->
+  <h1>You have not been added to any problem sets<%unless current_user%> and are not logged in<%end%></h1>
+    <h3>
+    <%unless current_user%> 
+      Please log in.
+    <%else%><!--user exists-->
+      <%if current_user.groups.empty?%> 
+        Please request to be added to a group
+        [button to place request to be added to group?]
+      <%else%><!--group for user exists-->
+        You belong to <%=pluralize(current_user.groups.count, "group") %><br>
+        <% current_user.groups.each do |group| %>
+          <%=group.title%> -- Pease contact <%= group.teacher%> and notify them that they have no content
+          [button to email teacher]
+        <%end%>
+      <%end%>
+   <%end%>
+  </h3>
+  </div>
+  <%end%>
+  

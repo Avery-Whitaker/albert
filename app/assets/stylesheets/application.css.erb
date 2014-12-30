@@ -1,0 +1,198 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+html{
+
+}
+body {
+  background-color: #FFF;
+
+}
+
+a, a:hover{
+  background-color:transparent !important;
+  color:#9f85a8;
+}
+
+#new-problem-header{
+  color:black;
+  text-align:center;
+  background-color:#c7c7c7;
+  border-bottom: 1px solid #b3b3b3;
+  padding-top:20px;
+  margin-top:-20px;
+}
+
+.new-problem-fields{
+  margin-left:20px;
+  margin-right:20px;
+}
+
+#modal-container{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+
+  z-index:100000000000000000000000;
+}
+#background{
+  background-color:black;
+  width:100%;
+  height:100%;
+  opacity:0.6;
+}
+
+#modal{
+  display:none;
+  position:fixed;
+  padding: 10px 10px 10px 10px;
+  top:50%;
+  left:50%;
+  min-width:600px;
+  min-height:500px;
+  opacity:1.0 !important;
+ // margin-left:-300px;
+  //margin-top:-250px;
+  z-index:100000000000000000000000000000000;
+  background-color:white;
+}
+
+nav.main{
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  padding: 15px;
+  //background-color:#9f85a8;
+  background:#FFF;
+  height:61px;
+  z-index:1000000000;
+  border-bottom: 1px solid #b3b3b3;
+}
+
+.navbarTop {
+  //background: linear-gradient(#DD88FD, #BCB4F3, #DD88FD);
+  padding: 25px;
+  background-color: #EDEF85;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height:100px;
+  z-index: 1030;
+}
+
+.navbarBot{
+  height: 60px;
+  //background: linear-gradient(#DD88FD, #BCB4F3, #DD88FD);
+  padding: 25px;
+  background-color: #EDEF85;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 1030;
+}
+
+.test{
+  background: linear-gradient(#151515, #606060, #808080);
+  color: #F00;
+  font-size:100;
+}
+div.links {
+
+  padding: 0 0 25px; 
+  display:inline-block;
+  float:left;
+
+}
+
+/*navbar button things*/
+a.navbar-button:link, a.navbar-button:visited{
+  color:#4a4a4a;
+  text-decoration: none;
+} 
+a.navbar-button:hover, a.navbar-button:active{
+  color:#9f85a8;;
+  text-decoration: none;
+}
+.navbar-button{
+  z-index: 1031;
+  font-size: 15pt; 
+  padding: 5px 10px;
+  border-radius: 8px;
+  position:relative;
+  float:center;
+}
+.navbar-main{
+  font-size:15pt;
+  font-family: "Helvetica-Bold", "Helvetica";
+  display:inline-block;
+  margin:0 auto;
+}
+.navbar-minor{
+  font-size:15pt;
+  font-family: "Helvetica-light";
+  display:inline-block;
+  margin:0 auto;
+}
+.links-container{
+  
+}
+
+@keyframes shade{
+  background
+}
+
+#user-info{
+  display:inline-block;
+  float:right;
+}
+
+
+.gearimage{
+  margin-top:-10px;
+  width: 40px;
+  height: 40px;
+}
+
+#container{
+ padding-top:50px;
+ width: 1200px;
+ margin: 0 auto;
+ margin-bottom:20px;
+}
+
+
+.yeild {
+  padding:100px;
+}
+
+#footer{
+  position:absolute;
+  width:100%;
+  min-height:50px;
+    background-color:#dcdcdc;
+}
+
+#footer-contents{
+  color:#4a4a4a;
+  text-align:center;
+  margin:20px;
+  color:#;
+  font-size:12px;
+}
+

@@ -1,0 +1,14 @@
+<!--
+  Problemsets show
+  seems functionally complete
+-->
+      <div id="problemset-header">
+        
+        <strong id="view-problemset-title"><%=@problemset.title%>:</strong> <%= link_to 'Edit', edit_problemset_path(@problemset) %> | <%= link_to 'Back', problemsets_path %>
+      <<%=raw @problemset.explanation.gsub(/\n/, '<br>')%></h3>
+      </div>
+
+      <% @problemset.problems.each do |problem| %>
+      <%= render partial: "problems/problem", locals:{problem: problem}%>
+      <%end%>
+

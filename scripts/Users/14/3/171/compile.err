@@ -1,0 +1,4 @@
+HiLoAutograderTest.java:4: error: class HiLo is public, should be declared in a file named HiLo.java
+public class HiLo {
+       ^
+1 error

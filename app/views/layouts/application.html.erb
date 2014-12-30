@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title><%= @title || "Albert"%></title>
+  
+  <%= stylesheet_link_tag    'bootstrap', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'bootstrap', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <%= csrf_meta_tags %>
+</head>
+  
+<body>
+        <div id="modal-container" class="modals" onclick="$('.modals').animate({opacity:'0'}, 200); $('.modals').hide();">
+        <div id="background">
+        </div>
+      </div>
+      <div id="modal" class="modals">  
+      </div>
+
+  <%= render partial: "layouts/header" %>
+  
+<div id="container">
+	<%= yield %>
+</div><br>
+
+<div id="footer">
+  <div id="footer-contents">
+     Copyright &#169; 2014 AlbertLabs. All Rights Reserved.
+  </div>
+</div>
+
+</body>
+</html>
