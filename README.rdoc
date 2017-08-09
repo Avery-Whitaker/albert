@@ -1,3 +1,1 @@
-== Albert
-
-Published for demonstration of projects I'm working on
+This repo is out of date. We are no longer working on github.
